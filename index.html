@@ -813,10 +813,13 @@
 
     <!-- Page background -->
     <section
+      <div
       id="successModal"
-      class="min-h-screen bg-gray-100 flex items-center justify-center p-4"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
     >
-      <!-- Card -->
       <div class="w-full max-w-xl rounded-2xl bg-white p-8 shadow-md">
         <!-- Icon -->
         <div
@@ -838,14 +841,12 @@
           </svg>
         </div>
 
-        <!-- Title -->
         <h3
           class="mt-4 text-center text-sm font-semibold tracking-wide text-green-600"
         >
           SUCCESS
         </h3>
 
-        <!-- Message -->
         <div class="mt-4 space-y-1 text-center">
           <p class="text-base font-semibold text-gray-800">
             Thank you for Booking Our Bus Seats.
@@ -858,7 +859,6 @@
           </p>
         </div>
 
-        <!-- Button -->
         <div class="mt-8 flex items-center justify-center gap-3">
           <button
             onclick="closeModal()"
