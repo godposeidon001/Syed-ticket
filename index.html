@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="import.css" />
+    <title>Syed Bus Tickets</title>
+  </head>
+  <body class="p-2 md:p-0">
+    <nav class="max-w-[1170px] mx-auto raleway">
+      <div class="navbar bg-base-100 p-0 md:p-2">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a class="text-lg font-medium text-[rgba(3,7,18,0.70)]">Home</a>
+              </li>
+              <li>
+                <a class="text-lg font-medium text-[rgba(3,7,18,0.70)]"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a class="text-lg font-medium text-[rgba(3,7,18,0.70)]"
+                  >Destination</a
+                >
+              </li>
+              <li>
+                <a class="text-lg font-medium text-[rgba(3,7,18,0.70)]"
+                  >Search</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a
+            class="btn btn-ghost text-lg md:text-3xl font-extrabold text-[#030712]"
+            >Syed-Ticket</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a class="text-lg font-medium text-[rgba(3,7,18,0.70)]">Home</a>
+            </li>
+            <li>
+              <a class="text-lg font-medium text-[rgba(3,7,18,0.70)]">About</a>
+            </li>
+            <li>
+              <a class="text-lg font-medium text-[rgba(3,7,18,0.70)]"
+                >Destination</a
+              >
+            </li>
+            <li>
+              <a class="text-lg font-medium text-[rgba(3,7,18,0.70)]">Search</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div
+            class="flex gap-2.5 border border-[rgba(29,209,0,0.40)] rounded-xl px-4 py-2 md:px-6 md:py-2 bg-[rgba(29,209,0,0.10)]"
+          >
+            <p class="text-xl font-bold text-[#1DD100]">Bus</p>
+            <img src="images/bus-icon.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="max-w-[1170px] mx-auto raleway mb-4">
+      <div class="card bg-base-100 image-full shadow-sm">
+        <figure>
+          <img class="!filter-none" src="images/banner.png" alt="Shoes" />
+        </figure>
+        <div
+          class="flex flex-col justify-center items-center text-center gap-8 p-4 md:p-0"
+        >
+          <h2 class="text-3xl md:text-6xl font-extrabold text-white">
+            End-to-End Travel with <br />
+            <span class="text-3xl md:text-6xl font-extrabold text-[#1DD100]"
+              >Syed Paribahan</span
+            >
+          </h2>
+          <p class="inter text-base md:text-lg font-normal text-white">
+            Syed-Ticket makes your daily commuting simple, reliable, and cashless
+          </p>
+          <div class="">
+            <button
+              class="btn bg-[#1DD100] raleway text-xl font-bold border-0 border-none"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="flex flex-col md:flex-row gap-4 justify-center items-center lg:-mt-20 md:-mt-10 relative"
+      >
+        <div
+          class="flex gap-4 border-0 border-b-[3px] border-b-[#1DD100] rounded-3xl bg-white w-72 p-6"
+        >
+          <div>
+            <img src="images/people.png" alt="" />
+          </div>
+          <div class="space-y-2">
+            <p class="inter text-4xl font-bold text-[#030712]">500K+</p>
+            <p class="inter text-lg font-normal text-[rgba(3,7,18,0.60)]">
+              Registered Users
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex gap-4 border-0 border-b-[3px] border-b-[#1DD100] rounded-3xl bg-white w-72 p-6"
+        >
+          <div>
+            <img src="images/ticket-coupon.png" alt="" />
+          </div>
+          <div class="space-y-2">
+            <p class="inter text-4xl font-bold text-[#030712]">1.7 lakh</p>
+            <p class="inter text-lg font-normal text-[rgba(3,7,18,0.60)]">
+              Tickets Sold
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex gap-4 border-0 border-b-[3px] border-b-[#1DD100] rounded-3xl bg-white w-72 p-6"
+        >
+          <div>
+            <img src="images/people.png" alt="" />
+          </div>
+          <div class="space-y-2">
+            <p class="inter text-4xl font-bold text-[#030712]">80K+</p>
+            <p class="inter text-lg font-normal text-[rgba(3,7,18,0.60)]">
+              Rental Partners
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-[1170px] mx-auto">
+      <div class="mt-28">
+        <h3
+          class="raleway text-[40px] font-bold text-center text-[#030712] mb-12"
+        >
+          Best Offers for You
+        </h3>
+        <div class="flex gap-6 flex-col md:flex-row">
+          <div class="flex bg-[#FFBF0F] md:w-1/2 rounded-3xl">
+            <div
+              class="flex flex-col justify-center space-y-1 md:space-y-3 pl-2 lg:pl-12"
+            >
+              <p
+                class="text-[rgba(3,7,18,0.80)] text-3xl md:text-4xl font-black inter"
+              >
+                15% OFF
+              </p>
+              <p
+                class="text-[rgba(3,7,18,0.80)], text-lg md:text-xl font-semibold inter"
+              >
+                on your next purchase
+              </p>
+              <p
+                class="text-[rgba(3,7,18,0.50)] text-base md:text-lg font-medium inter"
+              >
+                use by January 2024
+              </p>
+            </div>
+            <div>
+              <img src="images/coupon-divider.png" alt="" />
+            </div>
+            <div class="flex flex-col justify-center space-y-3 lg:pl-6">
+              <p class="raleway text-2xl md:text-3xl font-bold text-[#030712]">
+                NEW15
+              </p>
+              <p
+                class="raleway text-lg text-[rgba(3,7,18,0.40)] md:text-xl font-medium"
+              >
+                Coupon Code
+              </p>
+            </div>
+          </div>
+          <div class="flex bg-[#F78C9C] md:w-1/2 rounded-3xl">
+            <div
+              class="flex flex-col justify-center space-y-1 md:space-y-3 pl-2 lg:pl-12"
+            >
+              <p
+                class="text-[rgba(3,7,18,0.80)] text-3xl md:text-4xl font-black inter"
+              >
+                20% OFF
+              </p>
+              <p
+                class="text-[rgba(3,7,18,0.80)], text-lg md:text-xl font-semibold inter"
+              >
+                on your next purchase
+              </p>
+              <p
+                class="text-[rgba(3,7,18,0.50)] text-base md:text-lg font-medium inter"
+              >
+                use by January 2024
+              </p>
+            </div>
+            <div>
+              <img src="images/coupon-divider.png" alt="" />
+            </div>
+            <div class="flex flex-col justify-center space-y-3 lg:pl-6">
+              <p class="raleway text-2xl md:text-3xl font-bold text-[#030712]">
+                Couple 20
+              </p>
+              <p
+                class="raleway text-lg text-[rgba(3,7,18,0.40)] md:text-xl font-medium"
+              >
+                Coupon Code
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-16 mb-32">
+          <button
+            class="btn text-[#1DD100] raleway text-xl font-bold bg-white border border-[#1DD100] rounded-xl"
+          >
+            See all offers
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#F7F8F8] mb-32">
+      <h3
+        class="pt-32 raleway text-[#030712] text-[40px] font-bold text-center"
+      >
+        Syed Paribahan
+      </h3>
+      <p
+        class="text-[rgba(3,7,18,0.60);] inter text-lg font-normal text-center mb-12"
+      >
+       Book your tickets in just a few taps — no more standing in queues.
+      </p>
+
+      <!-- Top part -->
+      <div
+        class="max-w-[1170px] mx-auto flex justify-around flex-col lg:flex-row bg-white rounded-3xl md:p-6 lg:p-0"
+      >
+        <div class="max-w-[808px] flex flex-col justify-center">
+          <div class="flex justify-between flex-col md:flex-row">
+            <div class="flex gap-3.5 mb-6 items-center">
+              <div>
+                <img
+                  class="max-w-[68px] max-h-[48px]"
+                  src="images/bus-logo.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-[#030712] raleway text-4xl font-bold">
+                  Greenline Paribahan
+                </p>
+                <p class="inter text-lg font-normal text-[rgba(3,7,18,0.60)]">
+                  Coach-009-WEB ! AC_Business
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-2 border border-none bg-[rgba(29,209,0,0.15)] rounded-xl max-h-[56px] items-center p-2 justify-center"
+            >
+              <img
+                class="max-w-[28px] max-h-[28px]"
+                src="images/seat-green.png"
+                alt=""
+              />
+              <p
+                id="seats-left"
+                class="inter text-lg font-medium text-[#1DD100]"
+              >
+                40 Seats left
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-[#F7F8F8] border rounded-3xl border-none p-8 space-y-6 max-h-[600px] mt-6"
+          >
+            <div class="flex justify-between">
+              <p class="raleway text-lg font-semibold text-[rgba(3,7,18,0.60)]">
+                Route
+              </p>
+              <p class="text-[#030712] raleway text-lg font-semibold">
+                Dhaka-Sylhet
+              </p>
+            </div>
+            <hr class="border-t-4 border-dotted border-[rgba(3,7,18,0.20)]" />
+            <div class="flex justify-between">
+              <p class="raleway text-lg font-semibold text-[rgba(3,7,18,0.60)]">
+                Departure Time
+              </p>
+              <p class="text-[#030712] raleway text-lg font-semibold">
+                9:00 PM
+              </p>
+            </div>
+            <hr class="border-t-4 border-dotted border-[rgba(3,7,18,0.20)]" />
+            <div class="flex gap-6 flex-col md:flex-row">
+              <div
+                class="inter text-base font-medium text-[rgba(3,7,18,0.80)] bg-[rgba(3,7,18,0.05)] rounded-xl p-4"
+              >
+                Boarding Point - Laxmipur
+              </div>
+              <div
+                class="inter text-base font-medium text-[rgba(3,7,18,0.80)] bg-[rgba(3,7,18,0.05)] rounded-xl p-4"
+              >
+                Dropping Point - Bogura
+              </div>
+              <div
+                class="inter text-base font-medium text-[rgba(3,7,18,0.80)] bg-[rgba(3,7,18,0.05)] rounded-xl p-4"
+              >
+                Est. Time - 11 Hours
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <img src="images/info-divider.png" alt="" />
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5">
+          <img class="max-h-[48px] max-w-[48px]" src="images/fare.png" alt="" />
+          <p class="raleway text-3xl font-bold text-[#030712]">550 Taka</p>
+          <p class="raleway text-2xl font-semibold text-[rgba(3,7,18,0.60)]">
+            Per Seat
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Part -->
+      <div class="max-w-[1170px] mx-auto mt-16 bg-white rounded-3xl p-8">
+        <div class="flex flex-col md:flex-row">
+          <div class="left-side w-full md:w-7/12">
+            <div class="raleway text-2xl font-semibold text-[#030712]">
+              Select Your Seat
+            </div>
+            <hr
+              class="border-t-4 border-dotted border-[rgba(3,7,18,0.20)] mt-6 mb-5"
+            />
+            <div class="flex justify-between">
+              <div class="flex gap-2">
+                <img src="images/seat-gray.png" alt="" />
+                <p class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                  Available
+                </p>
+              </div>
+              <div class="flex gap-2">
+                <img src="images/seat-green-filled.png" alt="" />
+                <p class="inter text-lg font-medium text-[#1DD100]">Selected</p>
+              </div>
+            </div>
+            <hr
+              class="border-t-4 border-dotted border-[rgba(3,7,18,0.20)] mt-5 mb-6"
+            />
+            <div class="flex justify-end mb-6">
+              <div
+                class="bg-[rgba(3,7,18,0.10)] rounded-xl border border-none max-w-[110px] flex justify-center items-center"
+              >
+                <img src="images/wheel.png" alt="" />
+              </div>
+            </div>
+
+            <div
+              id="button-container"
+              class="grid grid-cols-5 gap-x-6 gap-y-6 items-center"
+            >
+              <div class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                A
+              </div>
+              <button
+                id="A1"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                A1
+              </button>
+              <button
+                id="A2"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                A2
+              </button>
+              <button
+                id="A3"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                A3
+              </button>
+              <button
+                id="A4"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                A4
+              </button>
+
+              <div class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                B
+              </div>
+              <button
+                id="B1"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                B1
+              </button>
+              <button
+                id="B2"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                B2
+              </button>
+              <button
+                id="B3"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                B3
+              </button>
+              <button
+                id="B4"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                B4
+              </button>
+
+              <div class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                C
+              </div>
+              <button
+                id="C1"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                C1
+              </button>
+              <button
+                id="C2"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                C2
+              </button>
+              <button
+                id="C3"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                C3
+              </button>
+              <button
+                id="C4"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                C4
+              </button>
+
+              <div class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                D
+              </div>
+              <button
+                id="D1"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                D1
+              </button>
+              <button
+                id="D2"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                D2
+              </button>
+              <button
+                id="D3"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                D3
+              </button>
+              <button
+                id="D4"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                D4
+              </button>
+
+              <div class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                E
+              </div>
+              <button
+                id="E1"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                E1
+              </button>
+              <button
+                id="E2"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                E2
+              </button>
+              <button
+                id="E3"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                E3
+              </button>
+              <button
+                id="E4"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                E4
+              </button>
+
+              <div class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                F
+              </div>
+              <button
+                id="F1"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                F1
+              </button>
+              <button
+                id="F2"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                F2
+              </button>
+              <button
+                id="F3"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                F3
+              </button>
+              <button
+                id="F4"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                F4
+              </button>
+
+              <div class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                G
+              </div>
+              <button
+                id="G1"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                G1
+              </button>
+              <button
+                id="G2"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                G2
+              </button>
+              <button
+                id="G3"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                G3
+              </button>
+              <button
+                id="G4"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                G4
+              </button>
+
+              <div class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                H
+              </div>
+              <button
+                id="H1"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                H1
+              </button>
+              <button
+                id="H2"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                H2
+              </button>
+              <button
+                id="H3"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                H3
+              </button>
+              <button
+                id="H4"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                H4
+              </button>
+
+              <div class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                I
+              </div>
+              <button
+                id="I1"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                I1
+              </button>
+              <button
+                id="I2"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                I2
+              </button>
+              <button
+                id="I3"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                I3
+              </button>
+              <button
+                id="I4"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                I4
+              </button>
+
+              <div class="inter text-lg font-medium text-[rgba(3,7,18,0.50)]">
+                J
+              </div>
+              <button
+                id="J1"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                J1
+              </button>
+              <button
+                id="J2"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                J2
+              </button>
+              <button
+                id="J3"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                J3
+              </button>
+              <button
+                id="J4"
+                class="btn bg-[#F7F8F8] border border-none rounded-xl inter text-lg font-medium text-[rgba(3,7,18,0.50)] p-2 md:p-6"
+              >
+                J4
+              </button>
+            </div>
+          </div>
+          <div class="horizontal-line">
+            <div
+              class="border-l-4 border-dotted border-[rgba(3,7,18,0.20)] h-full ml-8 mr-8"
+            ></div>
+          </div>
+          <div class="right-side w-full md:w-5/12 mt-8 md:mt-0">
+            <div class="raleway text-2xl font-semibold text-[#030712]">
+              Select Your Seat
+            </div>
+            <hr
+              class="border-t-4 border-dotted border-[rgba(3,7,18,0.20)] mt-6 mb-6"
+            />
+            <div class="bg-[#F7F8F8] p-8 rounded-xl">
+              <div class="w-full overflow-x-auto">
+                <table
+                  id="table-container"
+                  class="table min-w-full table-auto break-words"
+                >
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th>Seat</th>
+                      <th>Class</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                  <!-- footer -->
+                  <tfoot>
+                    <tr>
+                      <td
+                        class="inter text-sm md:text-base font-medium text-[#030712]"
+                      >
+                        Total Price:
+                      </td>
+                      <td></td>
+                      <td
+                        id="total-price"
+                        class="inter text-base font-medium text-[#030712]"
+                      ></td>
+                    </tr>
+                    <tr id="discount-id" class="hidden">
+                      <td
+                        class="inter text-sm md:text-base font-medium text-[#030712]"
+                      >
+                        Discount Applied:
+                      </td>
+                      <td></td>
+                      <td
+                        id="discount-value"
+                        class="inter text-base font-medium text-[#030712]"
+                      ></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div id="coupon-section" class="ml-2 hidden">
+                <div class="max-w-[369px] flex flex-col md:flex-row">
+                  <input
+                    id="coupon-input"
+                    class="w-full border-none bg-white rounded-xl mt-4 mb-4 md:mt-0 md:mb-0"
+                    type="text"
+                    name=""
+                    placeholder="Have any Coupon?"
+                  />
+                  <button
+                    id="coupon-button"
+                    onclick="applyCoupon()"
+                    class="btn md:-ml-20 bg-[#1DD100] border-none rounded-lg inter text-white"
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
+              <div class="flex justify-between mt-4 mx-5">
+                <p
+                  class="inter text-sm md:text-base font-medium text-[#030712]"
+                >
+                  Grand Total:
+                </p>
+                <p
+                  id="grand-total"
+                  class="inter text-sm md:text-base font-medium text-[#030712]"
+                ></p>
+              </div>
+            </div>
+            <div class="mt-6 max-w-md">
+              <div>
+                <p class="mb-4 inter text-base font-semibold text-[#030712]">
+                  Passenger Name*
+                </p>
+                <input
+                  class="border-[rgba(3,7,18,0.10)] rounded-xl w-full h-[34px] p-4"
+                  type="text"
+                  name=""
+                  id="customer-name"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+              <div class="mt-6">
+                <p class="mb-4 inter text-base font-semibold text-[#030712]">
+                  Passenger Phone*
+                </p>
+                <input
+                  class="border-[rgba(3,7,18,0.10)] rounded-xl w-full h-[34px] p-4"
+                  type="phone"
+                  name=""
+                  id="customer-phone"
+                  placeholder="Enter Your Phone"
+                />
+              </div>
+              <div class="mt-6">
+                <p class="mb-4 inter text-base font-semibold text-[#030712]">
+                  Email*
+                </p>
+                <input
+                  class="border-[rgba(3,7,18,0.10)] rounded-xl w-full h-[34px] p-4"
+                  type="email"
+                  name=""
+                  id="customer-email"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+              <div class="mt-6">
+                <button
+                  class="btn bg-[#1DD100] border-none rounded-2xl text-white raleway text-xl font-extrabold w-full"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#070b12] text-gray-300 w-full">
+      <div class="px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Top: brand + store button -->
+        <div
+          class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between"
+        >
+          <!-- Brand -->
+          <div class="max-w-md">
+            <h2 class="text-2xl font-extrabold text-white">Syed-Ticket</h2>
+            <p class="mt-3 leading-relaxed text-gray-400">
+              Syed-Ticket is a digital platform to make your daily commuting
+              better.
+            </p>
+          </div>
+
+          <!-- Store -->
+          <div class="md:text-right">
+            <p class="text-sm text-gray-400">Download our app</p>
+            <a
+              href="#"
+              class="mt-3 inline-flex items-center rounded-lg bg-white/5 p-1 ring-1 ring-white/10 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              aria-label="Get it on Google Play"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play"
+                class="h-12 w-auto"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="my-8 border-t border-dashed border-white/10"></div>
+
+        <!-- Bottom: copyright + links -->
+        <div
+          class="flex flex-col-reverse items-start gap-6 md:flex-row md:items-center md:justify-between"
+        >
+          <p class="text-xs text-gray-500">
+            © all rights reserved, Syed-Ticket services limited, 2025
+          </p>
+
+          <nav class="flex flex-wrap gap-x-8 gap-y-3 text-sm">
+            <a href="#" class="text-gray-300 hover:text-white"
+              >Terms &amp; condition</a
+            >
+            <a href="#" class="text-gray-300 hover:text-white"
+              >Return &amp; refund policy</a
+            >
+            <a href="#" class="text-gray-300 hover:text-white"
+              >Privacy policy</a
+            >
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="utility.js"></script>
+  </body>
+</html>
