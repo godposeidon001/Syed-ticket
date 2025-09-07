@@ -1,6 +1,8 @@
 let count = 0;
 let btnarray = [];
 
+document.getElementById('seats-left').innerText='40';
+
 document
   .getElementById("button-container")
   .addEventListener("click", function (e) {
@@ -56,6 +58,8 @@ function handleExist(id) {
 
   const grandTotal = document.getElementById("grand-total");
   grandTotal.innerText = (550 * btnarray.length).toString();
+
+  document.getElementById('seats-left').innerText=(40-btnarray.length).toString();
 }
 
 function handleNotExist(id) {
@@ -88,6 +92,8 @@ function handleNotExist(id) {
 
   const grandTotal = document.getElementById("grand-total");
   grandTotal.innerText = (550 * btnarray.length).toString();
+
+  document.getElementById('seats-left').innerText=(40-btnarray.length).toString();
 }
 
 function handleCouponSection() {
