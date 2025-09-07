@@ -110,7 +110,7 @@ function applyCoupon() {
     const grandTotal = document.getElementById("grand-total");
     grandTotal.innerText = (550 * btnarray.length - discountedPrice).toString();
   } else if (couponInput.value === "Couple20") {
-    const discountedPrice = (0.20 * (550 * btnarray.length)).toString();
+    const discountedPrice = (0.2 * (550 * btnarray.length)).toString();
 
     const discount = document.getElementById("discount-id");
     discount.classList.remove("hidden");
@@ -120,8 +120,52 @@ function applyCoupon() {
 
     const grandTotal = document.getElementById("grand-total");
     grandTotal.innerText = (550 * btnarray.length - discountedPrice).toString();
-  }
-  else{
+  } else {
     alert("Wrong Coupon Code Entered");
   }
 }
+
+function nextButton() {
+  const name = document.getElementById("customer-name").value.trim();
+  const phone = document.getElementById("customer-phone").value.trim();
+  const email = document.getElementById("customer-email").value.trim();
+
+  if (!name || !phone || !email) {
+        alert("Please fill in Passenger Name, Number & Email.");
+        return;
+      }
+
+      openModal();
+}
+
+function openModal() {
+  const modal = document.getElementById("successModal");
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+  document.body.classList.add("overflow-hidden"); // prevent background scroll
+  // move focus into modal
+  setTimeout(() => modal.querySelector("button:last-of-type").focus(), 0);
+}
+
+function closeModal() {
+  const modal = document.getElementById("successModal");
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+  document.body.classList.remove("overflow-hidden");
+  window.location.reload();
+}
+
+function proceed() {
+  // redirect or next step
+  // window.location.href = "/next";
+  closeModal();
+  window.location.reload();
+}
+
+// Optional: close on ESC / overlay click
+document.getElementById("successModal").addEventListener("click", (e) => {
+  if (e.target.id === "successModal") closeModal();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeModal();
+});

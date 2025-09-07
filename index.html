@@ -106,7 +106,8 @@
             >
           </h2>
           <p class="inter text-base md:text-lg font-normal text-white">
-            Syed-Ticket makes your daily commuting simple, reliable, and cashless
+            Syed-Ticket makes your daily commuting simple, reliable, and
+            cashless
           </p>
           <div class="">
             <button
@@ -261,7 +262,7 @@
       <p
         class="text-[rgba(3,7,18,0.60);] inter text-lg font-normal text-center mb-12"
       >
-       Book your tickets in just a few taps — no more standing in queues.
+        Book your tickets in just a few taps — no more standing in queues.
       </p>
 
       <!-- Top part -->
@@ -798,6 +799,7 @@
               </div>
               <div class="mt-6">
                 <button
+                  onClick="nextButton()"
                   class="btn bg-[#1DD100] border-none rounded-2xl text-white raleway text-xl font-extrabold w-full"
                 >
                   Next
@@ -805,6 +807,71 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page background -->
+    <section
+      id="successModal"
+      class="min-h-screen bg-gray-100 flex items-center justify-center p-4"
+    >
+      <!-- Card -->
+      <div class="w-full max-w-xl rounded-2xl bg-white p-8 shadow-md">
+        <!-- Icon -->
+        <div
+          class="mx-auto flex h-16 w-16 items-center justify-center rounded-full ring-2 ring-green-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 text-green-600"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M20 6L9 17l-5-5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+
+        <!-- Title -->
+        <h3
+          class="mt-4 text-center text-sm font-semibold tracking-wide text-green-600"
+        >
+          SUCCESS
+        </h3>
+
+        <!-- Message -->
+        <div class="mt-4 space-y-1 text-center">
+          <p class="text-base font-semibold text-gray-800">
+            Thank you for Booking Our Bus Seats.
+          </p>
+          <p class="text-sm text-gray-700">
+            We are working hard to find the best service and deals for you.
+          </p>
+          <p class="text-sm text-gray-500">
+            Shortly you will find a confirmation in your email.
+          </p>
+        </div>
+
+        <!-- Button -->
+        <div class="mt-8 flex items-center justify-center gap-3">
+          <button
+            onclick="closeModal()"
+            class="rounded-full px-5 py-2 text-sm font-semibold text-gray-700 ring-1 ring-gray-300 hover:bg-gray-50"
+          >
+            Close
+          </button>
+          <button
+            onclick="proceed()"
+            class="rounded-full bg-green-600 px-6 py-3 text-sm font-semibold text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+          >
+            Continue
+          </button>
         </div>
       </div>
     </section>
